@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <input type="text" id="podajMiejc">
     <!-- 
         wymagania do aplikacji:
         1. pozwól użytkownikowi podac miejscowosc
@@ -21,4 +23,14 @@
         5. pozwol usuwac miejscowosc!
      -->
 </body>
+
+<script>
+    const miejsc = document.getElementById("podajMiejsc");
+    const opwApiKey = '50d53005c0fd5f556bb4ef15224c4209'
+        const openWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=Cracow&APPID=${opwApiKey}`
+        const weather = fetch(openWeatherUrl)
+
+
+</script>
+
 </html>
